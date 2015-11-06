@@ -17,9 +17,14 @@
 		}
 		.numbers, .operation {
 			color: #396D3B;
-			font-size: 10em;
+			font-size: 8em;
 			text-align: right;
 			border-bottom: 10px solid transparent;
+		}
+		@media all and (min-width: 601px) {
+			.numbers, .operation {
+				font-size: 10em;
+			}
 		}
 		.numbers:last-of-type {
 			border-bottom-color: #396D3B
