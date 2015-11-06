@@ -1,1 +1,53 @@
-hello world
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Minute Math</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: sans-serif;
+		}
+		body {
+			background-color: #2BDA2B;
+		}
+		.numbers, .operation {
+			color: #396D3B;
+			font-size: 10em;
+			text-align: right;
+			border-bottom: 10px solid transparent;
+		}
+		.numbers:last-of-type {
+			border-bottom-color: #396D3B
+		}
+		.operation {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			margin-left: -.7em;
+		}
+		.parent {
+			display: flex;
+			height: 100vh; /* Or whatever */
+		}
+
+		.child {
+			margin: 15vh auto auto auto;  /* Magic! */
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="child">
+			<div class="operation">+</div>
+			<div class="numbers">18</div>
+			<div class="numbers">9</div>
+		</div>
+	</div>
+
+</body>
+</html>
